@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"homepage": "https://github.com/designeng/grunt-git-remover",
 	"author": {
-		"name": "designeng",
+		"name": "Denis Savenok",
 		"email": "denissavenok@gmail.com"
 	},
 	"contributors": [
