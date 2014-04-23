@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'adduser' ]
+2 info using npm@1.2.21
+3 info using node@v0.10.7
+4 warn Username may not contain non-url-safe chars
+5 verbose adduser before first PUT { name: 'designeng',
+5 verbose adduser   salt: 'XXXXX',
+5 verbose adduser   password_sha: 'XXXXX',
+5 verbose adduser   email: 'denissavenok@gmail.com',
+5 verbose adduser   _id: 'org.couchdb.user:designeng',
+5 verbose adduser   type: 'user',
+5 verbose adduser   roles: [],
+5 verbose adduser   date: '2014-04-23T17:09:50.302Z' }
+6 verbose url raw /-/user/org.couchdb.user:designeng
+7 verbose url resolving [ 'https://registry.npmjs.org/',
+7 verbose url resolving   './-/user/org.couchdb.user:designeng' ]
+8 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:designeng
+9 info trying registry request attempt 1 at 21:09:50
+10 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:designeng
+11 http 409 https://registry.npmjs.org/-/user/org.couchdb.user:designeng
+12 verbose adduser update existing user
+13 verbose url raw /-/user/org.couchdb.user:designeng
+14 verbose url resolving [ 'https://registry.npmjs.org/',
+14 verbose url resolving   './-/user/org.couchdb.user:designeng' ]
+15 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:designeng
+16 info trying registry request attempt 1 at 21:09:51
+17 http GET https://registry.npmjs.org/-/user/org.couchdb.user:designeng
+18 http 401 https://registry.npmjs.org/-/user/org.couchdb.user:designeng
+19 verbose adduser back [ [Error: unauthorized Name or password is incorrect.: -/user/org.couchdb.user:designeng],
+19 verbose adduser   { error: 'unauthorized',
+19 verbose adduser     reason: 'Name or password is incorrect.' },
+19 verbose adduser   '{"error":"unauthorized","reason":"Name or password is incorrect."}\n' ]
+20 warn adduser Incorrect username or password
+20 warn adduser You can reset your account by visiting:
+20 warn adduser
+20 warn adduser     http://admin.npmjs.org/reset
+21 error Error: unauthorized Name or password is incorrect.: -/user/org.couchdb.user:designeng
+21 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:269:14)
+21 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/index.js:148:22)
+21 error     at Request.EventEmitter.emit (events.js:98:17)
+21 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/index.js:876:14)
+21 error     at Request.EventEmitter.emit (events.js:117:20)
+21 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/index.js:827:12)
+21 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+21 error     at _stream_readable.js:910:16
+21 error     at process._tickCallback (node.js:415:13)
+22 error If you need help, you may report this log at:
+22 error     <http://github.com/isaacs/npm/issues>
+22 error or email it to:
+22 error     <npm-@googlegroups.com>
+23 error System Darwin 12.4.0
+24 error command "node" "/usr/local/bin/npm" "adduser"
+25 error cwd /Users/savenok/Public/Drop Box/js/temp/grunt-git-remover
+26 error node -v v0.10.7
+27 error npm -v 1.2.21
+28 verbose exit [ 1, true ]
