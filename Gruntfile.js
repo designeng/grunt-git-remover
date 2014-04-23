@@ -1,9 +1,9 @@
 /*
- * grunt-git-status
- * https://github.com/nyfagel/grunt-git-status
- * Forked from https://github.com/mikaelkaron/grunt-git-describe
+ * grunt-git-remover
+ * https://github.com/designeng/grunt-git-remover
+ * Forked from https://github.com/nyfagel/grunt-git-status
  *
- * Copyright (c) 2013 Ny fågel
+ * Copyright (c) 2014 designeng
  * Licensed under the MIT license.
  */
 
@@ -21,7 +21,7 @@ module.exports = function (grunt) {
 			}
 		},
 
-		"git-status-delete": {
+		"git-remover": {
 			"me" : {
 			}
 		}
@@ -30,6 +30,6 @@ module.exports = function (grunt) {
 
 	grunt.loadTasks("tasks");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
-	grunt.registerTask("default", [ "jshint", "git-status-delete" ]);
+	grunt.registerTask("default", [ "jshint", "git-remover" ]);
 
 };

@@ -2,7 +2,7 @@
  * grunt-git-status
  * https://github.com/nyfagel/grunt-git-status
  *
- * Copyright (c) 2013 Ny fågel
+ * Copyright (c) 2014 designeng
  * Licensed under the MIT license.
  */
 
@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 	var PROP = "prop";
 	var FAIL_ON_ERROR = "failOnError";
 
-	grunt.registerMultiTask("git-status-delete", "Runs git status and delete unlinked files", function (prop, cwd) {
+	grunt.registerMultiTask("git-remover", "Runs git removing unlinked files", function (prop, cwd) {
 		// Start async task
 		var done = this.async();
 
@@ -74,14 +74,12 @@ module.exports = function (grunt) {
 				}
 				i++
 			}
-			// console.log("RES:", arr)
 
 			// Convert result to string
 			result = String(result);
 
 			// Output
-			// grunt.log.ok(result);
-			console.log(result)
+			grunt.log.ok(result);
 
 			// If we were passed a prop we should update
 			if (options[PROP]) {
